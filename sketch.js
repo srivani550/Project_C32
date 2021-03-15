@@ -140,3 +140,8 @@ function mouseReleased() {
   sling.fly();
 }
 
+function keyPressed(){
+  if(keyCode === 32){
+    sling.attach(polygon_1.body);
+  }
+}
