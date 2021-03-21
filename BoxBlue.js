@@ -22,12 +22,12 @@ class Box {
     display() {
      //NameSpacing(renaming position of Ground)
         if(this.body.speed < 3){
-        push();
-        var pos = this.body.position;
-        strokeWeight(2);
-        fill("blue");
-        rect(pos.x, pos.y, this.width, this.height);
-        pop();
+            push();
+            var pos = this.body.position;
+            strokeWeight(2);
+            fill("blue");
+            rect(pos.x, pos.y, this.width, this.height);
+            pop();
         }
         else {
             World.remove(world, this.body);
@@ -37,5 +37,11 @@ class Box {
             pop();
         }
 
+    }
+
+    score(){
+        if(this.visibility < 0 && this.visibility > -105){
+            score++;
+        }
     }
 }

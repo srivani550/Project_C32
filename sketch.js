@@ -18,6 +18,8 @@ var BlockBlue8, BlockBlue9, BlockBlue10, BlockBlue11, BlockBlue12, BlockBlue13, 
 
 var polygon1;
 
+var score = 0;
+
 function setup() {
 
   createCanvas(800, 400);
@@ -83,49 +85,57 @@ function setup() {
 
 function draw() {
   background(56, 44, 44);
+
+  fill("white");
+  text("SCORE : " + score, 700, 40);
   ground1.display();
 
   BlockBlue1.display();
-
   BlockBlue2.display();
-
   BlockBlue3.display();
-
   BlockBlue4.display();
-
   BlockBlue5.display();
-
   BlockBlue6.display();
-
   BlockBlue7.display();
-
   BlockPink1.display ();
-
   BlockPink2.display ();
-
   BlockPink3.display ();
-
   BlockPink4.display ();
-
   BlockPink5.display ();
-
   BlockPink6.display ();
-
   BlockPink7.display ();
-
   BlockBlue8.display ();
-
   BlockBlue9.display ();
-
   BlockBlue10.display();
-
   BlockBlue11.display();
-
   BlockBlue12.display();
-
   BlockBlue13.display();
-
   BlockBlue14.display();
+ 
+  BlockBlue1.score();
+  BlockBlue2.score();
+  BlockBlue3.score();
+  BlockBlue4.score();
+  BlockBlue5.score();
+  BlockBlue6.score();
+  BlockBlue7.score();
+  BlockPink1.score();
+  BlockPink2.score();
+  BlockPink3.score();
+  BlockPink4.score();
+  BlockPink5.score();
+  BlockPink6.score();
+  BlockPink7.score();
+  BlockBlue8.score();
+  BlockBlue9.score();
+  BlockBlue10.score();
+  BlockBlue11.score();
+  BlockBlue12.score();
+  BlockBlue13.score();
+  BlockBlue14.score();
+
+
+
 
   polygon_1.display();
 
